@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: gic-communion-backend
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: VAPID_PUBLIC_KEY
+        value: BB6OgY3wyQj7_nRQsllvKxYg-l6WByqtkSQN1g0G60X6uE1aH-G54vEylvApqnsuQtyni-eReNEFdpX5qp3G9fM
+      - key: VAPID_PRIVATE_KEY
+        value: uE1aH-G54vEylvApqnsuQtyni-eReNEFdpX5qp3G9fM
+      - key: VAPID_EMAIL
+        value: mailto:admin@globalimpactchurch.org
+      - key: ADMIN_PIN
+        value: gic2026
